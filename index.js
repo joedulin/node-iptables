@@ -78,6 +78,7 @@ function iptablesArgs (rule) {
 
     if (!rule.chain) rule.chain = 'INPUT';
 
+    if (rule.table) args = args.concat(['-t', rule.table]);
     if (rule.chain) args = args.concat([rule.action, rule.chain]);
     if (rule.protocol) args = args.concat(["-p", rule.protocol]);
     if (rule.src) args = args.concat(["--src", rule.src]);
