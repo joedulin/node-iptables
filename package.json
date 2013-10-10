@@ -5,7 +5,7 @@
     "main" : "./index.js",
     "repository" : {
         "type" : "git",
-        "url" : "https://github.com/pkrumins/node-iptables.git"
+        "url" : "https://github.com/joedulin/node-iptables.git"
     },
     "keywords" : [
         "iptables",
