@@ -60,9 +60,9 @@ exports.deleteRule = deleteRule;
 function iptables (rule) {
     var args = iptablesArgs(rule);
 
-    var cmd = 'iptables';
+    var cmd = '/sbin/iptables';
     if (rule.sudo) {
-        cmd = 'sudo';
+        cmd = '/usr/bin/sudo';
         args = ['iptables'].concat(args);
     }
 
